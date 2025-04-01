@@ -1,0 +1,6 @@
+#define is_char(c) ( ((c) >= 'A' && (c) <= 'Z') || ((c) >= 'a' && (c) <= 'z') )
+#define eh_minusculo(a) ( is_char(a) && ( (a)&32 ) != 0 )
+#define eh_maiusculo(a) ( is_char(a) && ( (a)&32 ) == 0 )
+#define minusculo(c) ((c) | 32)
+#define maiuscula(c) ((c) & ~32)
+#define troca_a_caixa(c) ((c) ^ 32)
