@@ -11,7 +11,7 @@ int main() {
 			printf("-> Termina o programa\n");
 			return 0;
 		} else {
-			printf("-> %d\n", c*c);
+			printf("%d² -> %d\n", c, c*c);
 		}
 	};
 }
