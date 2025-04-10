@@ -1,7 +1,7 @@
+// ex 6
 #include <stdio.h>
 
 int main() {
-	
 	int a, b, c;
 	
 	
@@ -14,16 +14,23 @@ int main() {
 	printf("Digite outro numero: ");
 	scanf("%i", &c);
 	
-	int maior;
+	int maior, meio, menor;
 	if (a > b) {
 		maior = a;
+		menor = b;
 	} else {
 		maior = b;
+		menor = a;
 	}
-	if (maior<c) {
+	meio = c;
+	if (maior < meio) {
+		meio = maior;
 		maior = c;
+	} else if (meio < menor) {
+		meio = menor;
+		menor = c;
 	}
-	printf("O maior numero = %d", maior);
+	printf("%d > %d > %d\n", maior, meio, menor);
 	
 	return 0;
 }

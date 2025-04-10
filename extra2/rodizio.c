@@ -1,3 +1,4 @@
+// ex 12
 #include <stdio.h>
 
 char *rodizio(int fim_da_placa) {
@@ -24,5 +25,5 @@ int main(void) {
 	int placa;
 	printf("Numeros da placa:");
 	scanf("%d", &placa);
-	printf("A placa %d tem rodizio toda %s-feira", placa, rodizio(placa%10));	
+	printf("A placa %04d tem rodizio toda %s-feira\n", placa, rodizio(placa%10));
 }
